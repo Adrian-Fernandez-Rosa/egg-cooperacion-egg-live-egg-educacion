@@ -32,3 +32,21 @@ public class Main {
     }
 
 ```
+
+Escribir un programa que pida tu nombre, lo guarde en una variable y lo muestre por pantalla
+
+```java
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner miScanner = new Scanner(System.in).useDelimiter("\n");
+
+        System.out.println("Escribé tu nombre");
+        String name = miScanner.nextLine();
+        System.out.println("Tu nombre es: "+ name);
+    }
+}
+
+```
