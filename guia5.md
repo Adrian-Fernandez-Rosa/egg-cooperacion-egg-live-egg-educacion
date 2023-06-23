@@ -33,7 +33,7 @@ public class Main {
 
 ```
 
-Ejercicio 3:
+# Ejercicio 3:
  Escribir un programa que pida tu nombre, lo guarde en una variable y lo muestre por pantalla
 
 ```java
@@ -49,5 +49,29 @@ public class Main {
         System.out.println("Tu nombre es: "+ name);
     }
 }
+
+```
+
+# Ejercicio 4
+Escribir un programa que pida una frase y la muestre toda en mayúsculas y
+después toda en minúsculas. Nota: investigar la función toUpperCase() y
+toLowerCase() en Java.
+
+```java
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner miScanner = new Scanner(System.in).useDelimiter("\n");
+
+        System.out.println("Escribé una frase");
+        String frase = miScanner.nextLine();
+        System.out.println("Tu frase en mayúscula es: "+ frase.toUpperCase());
+        System.out.println(); //salto de linea para una salida prolija
+        System.out.println("Tu frase en minúscula es: "+ frase.toLowerCase());
+    }
+}
+
 
 ```
